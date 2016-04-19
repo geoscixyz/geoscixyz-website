@@ -546,43 +546,18 @@ footer {
 a {
 color: black;
 }
-.copyright {
-    margin: 0;
-    padding: 20px 0px;
-    text-align: left;
-}
-.designed {
-    margin: 0;
-    padding: 20px 0px;
-    text-align: right;
-}
-.designed a:hover {
-    color: #e66f69;
-}
-#contact {
-    color: #fff;
+.footer-copyright {
+  padding-top: 10px;
+  line-height: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  vertical-align: bottom;
 }
 
-.mapWrap {
-    position: relative;
-    /*min-height: 600px;*/
-}
-#googleMap {
-    position: absolute !important;
-    top: 0;
-    left: 0;
-    height: 100%;
-}
-#contact-area {
-    background: rgba(0, 0, 0, 1);
-    width: 100%;
-    position: relative;
-    padding: 80px 0px 60px 0px;
+.footer-copyright > a {
+  color: #bbb;
 }
 
-.moreDetails {
-    color: #fff;
-}
 h2.block_title {
   color: white;
 }
