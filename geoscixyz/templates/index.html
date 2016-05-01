@@ -8,40 +8,93 @@
     </head>
 
     <body>
-        {% include _templateFolder+'navigation.html' %}
+        <div class="wrap">
+            {% include _templateFolder+'navigation.html' %}
 
-        <!-- start projects -->
-       <section id="projects">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 templatemo-box", align="center">
-                        <a href="http://gpg.geosci.xyz"><img src="../s/images/gpg.png" width=240 class="img-responsive" alt="projects img" ></a>
-                        <a href="http://gpg.geosci.xyz"><h2 class="text">GPG</h2></a>
-                        <p>Collaborative, open access educational resources for geophysics</p>
-                        <!-- <p>SimPEG is an open source python package for numerical simulations and gradient based inverse problems in geophysics</p> -->
+            <!-- start projects -->
+           <section id="projects">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-4 templatemo-box" align="center">
+
+                            <a href="http://gpg.geosci.xyz">
+                                <div class="hovereffect">
+                                    <img src="../s/images/gpg.png" class="img-responsive" alt="">
+                                    <div class="overlay">
+                                       <h2>
+                                            GPG
+                                       </h2>
+                                       <i class="fa fa-book" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </a>
+
+    <!--                         <a href="http://gpg.geosci.xyz" class="project-box">
+                                <img src="../s/images/gpg.png" width=240 class="img-responsive" alt="projects img" ></a>
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category text-faded">
+                                            An open access educational resource for applied geophysics
+                                        </div>
+                                        <div class="project-name">
+                                            GPG
+                                        </div>
+                                    </div>
+                                </div>
+                            </a> -->
+                            <a href="http://gpg.geosci.xyz"><h2 class="text">GPG</h2></a>
+                            <p>Geophysics for practicing geoscientists</p>
+                        </div>
+
+
+                        <div class="col-md-4 templatemo-box" align="center">
+
+                            <a href="http://em.geosci.xyz">
+                                <div class="hovereffect">
+                                    <img src="../s/images/emgeosci.png" class="img-responsive" alt="">
+                                    <div class="overlay">
+                                       <h2>
+                                            EM
+                                       </h2>
+                                       <i class="fa fa-book" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- <a href="http://em.geosci.xyz"><img src="../s/images/emgeosci.png" width=240 class="img-responsive" alt="projects img" ></a> -->
+                            <a href="http://em.geosci.xyz"><h2 class="text">EM</h2></a>
+                            <p>Electromagnetic geophysics</p>
+                        </div>
+
+                        <div class="col-md-4 templatemo-box" align="center">
+
+                            <a href="http://simpeg.xyz">
+                                <div class="hovereffect">
+                                    <img src="http://www.simpeg.xyz/s/img/logo-block.png" class="img-responsive" alt="">
+                                    <div class="overlay">
+                                       <h2>
+                                            SimPEG
+                                       </h2>
+                                       <i class="fa fa-wrench" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- <a href="http://simpeg.xyz"><img src="http://www.simpeg.xyz/s/img/logo-block.png" width=240 class="img-responsive" alt="projects img" ></a> -->
+                            <a href="http://simpeg.xyz"><h2 class="text">SimPEG</h2></a>
+                            <p>Simulation and Parameter Estimation in Geophysics</p>
+                       </div>
+
                     </div>
-
-                    <div class="col-md-4 templatemo-box", align="center">
-                        <a href="http://em.geosci.xyz"><img src="../s/images/emgeosci.png" width=240 class="img-responsive" alt="projects img" ></a>
-                        <a href="http://em.geosci.xyz"><h2 class="text">EM</h2></a>
-                        <p>Collaborative, open access educational resources for geophysics</p>
-                        <!-- <p>SimPEG is an open source python package for numerical simulations and gradient based inverse problems in geophysics</p> -->
-                    </div>
-
-                    <div class="col-md-4 templatemo-box", align="center">
-                        <a href="http://simpeg.xyz"><img src="http://www.simpeg.xyz/s/img/logo-block.png" width=240 class="img-responsive" alt="projects img" ></a>
-                        <a href="http://simpeg.xyz"><h2 class="text">SimPEG</h2></a>
-                        <p>Simulation and Parameter Estimation in Geophysics</p>
-    <!--                     <p>SimPEG is an open source python package for numerical simulations and gradient based inverse problems in geophysics</p>
-     -->            </div>
-
                 </div>
-            </div>
-        </section>
-        <!-- end projects -->
+            </section>
+            <!-- end projects -->
+            <div id="push"></div>
+        </div>
 
         {% include _templateFolder+'footer.html' %}
-
+        {% include _templateFolder+'scripts.html' %}
     </body>
 
 </html>
