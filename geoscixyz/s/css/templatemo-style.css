@@ -93,7 +93,7 @@ h3{
 h4
     {
         font-weight: 500;
-
+        font-style: italic;
     }
 /* end h1 group */
 p { line-height: 1.6em; }
@@ -111,8 +111,8 @@ img
        width: 100%;
        height: 100%;
        background: rgba(0, 0, 0, 0.4);
-       padding-top: 100px;
-       padding-bottom: 100px;
+       padding-top: 30px;
+       padding-bottom: 30px;
     }
 /* over lay */
 
@@ -241,10 +241,10 @@ img
 /* start home */
 #home
     {
-    background: url('../images/home-bg.jpg') no-repeat;
+    /*background: url('../images/home-bg.jpg') no-repeat;*/
     background-size: cover;
     color: #fff;
-    margin-top: 70px;
+    margin-top: 60px;
     text-align: center;
     width: 100%;
     }
@@ -254,6 +254,10 @@ img
         font-weight: 400;
         font-style: italic;
         line-height: 2em;
+    }
+#home h4
+    {
+        font-style: italic;
     }
 #home img
     {
@@ -293,7 +297,7 @@ img
 /* start projects */
 #projects
     {
-        padding-top: 150px;
+        padding-top: 10px;
         padding-bottom: 10px;
     }
 #projects p
@@ -317,11 +321,19 @@ img
         text-align: center;
         margin-right: 20px;
     }*/
+#projects h3
+    {
+        font-size: 12;
+        /*font-weight: bold;*/
+        /*font-style: italic;*/
+    }
 #projects h4
     {
-        font-weight: bold;
+        font-size: 14;
+        /*font-weight: bold;*/
         font-style: italic;
     }
+
 #projects img
     {
         width: 240px;
@@ -329,7 +341,7 @@ img
         border-radius: 20px;
     }
 
-.hovereffect {
+#projects .hovereffect {
   width: 240px;
   height: 240px;
   border-radius: 20px;
@@ -340,9 +352,9 @@ img
   align:center;
 }
 
-.hovereffect .overlay {
-  width: 240px;
-  height: 240px;
+#projects .hovereffect .overlay {
+/*  width: 240px;
+  height: 240px;*/
   /*border-radius: 20px;*/
   position: absolute;
   overflow: hidden;
@@ -353,7 +365,7 @@ img
   transition:all .4s ease-in-out
 }
 
-.hovereffect img {
+#projects .hovereffect img {
   display: block;
   position: relative;
   -webkit-transition: all 0.4s ease-in;
@@ -363,7 +375,7 @@ img
   border-radius: 20px;
 }
 
-.hovereffect:hover img {
+#projects .hovereffect:hover img {
   filter: grayscale(1) blur(3px);
   -webkit-filter: grayscale(1) blur(3px);
   width: 240px;
@@ -371,23 +383,25 @@ img
   /*border-radius: 20px;*/
 }
 
-.hovereffect h2 {
+#projects .hovereffect h2 {
   /*text-transform: uppercase;*/
   text-align: center;
   position: relative;
-  top: -40px;
+  height: 120px;
   font-size: 17px;
-  padding-top: 10px;
+  font-weight: 150px;
+  padding-top: 15px;
   padding-bottom: 10px;
   background: rgba(0, 0, 0, 0.6);
+  line-height: 19px;
 }
 
 
-.hovereffect .fa {
+#projects .hovereffect .fa {
   display: inline-block;
   text-decoration: none;
   padding: 0px 0px;
-  /*margin: 50px 0 0 0;*/
+  margin: 10px 0 0 0;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.6);
   text-transform: lowercase;
@@ -397,14 +411,15 @@ img
   line-height: 40px;
 }
 
-.hovereffect a.info:hover {
+
+/*#projects .hovereffect a.info:hover {
   box-shadow: 0 0 5px #fff;
-}
-.hovereffect .fa:hover, .hovereffect h2:hover {
+}*/
+#projects .hovereffect p:hover, .hovereffect h2:hover {
   box-shadow: 0 0 5px #fff;
 }
 
-.hovereffect .fa, .hovereffect h2 {
+#projects .hovereffect .fa, .hovereffect h2 {
   -webkit-transform: scale(0.7);
   -ms-transform: scale(0.7);
   transform: scale(0.7);
@@ -417,7 +432,7 @@ img
   /*background:rgba(0,0,0,0.5);*/
 }
 
-.hovereffect:hover .fa, .hovereffect:hover h2 {
+#projects .hovereffect:hover .fa, .hovereffect:hover h2 {
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-transform: scale(1);
