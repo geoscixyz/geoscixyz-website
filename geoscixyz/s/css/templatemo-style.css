@@ -10,9 +10,9 @@ html, body
 
 body
     {
-        background: #f8f8f8;;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 300;
+        background: #f8f8f8;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 200;
         position: relative;
         width: 100%;
         overflow-x: hidden;
@@ -61,14 +61,15 @@ footer
 /* Not required for template or sticky footer method. */
 
 #wrap > .container {
-padding-top: 50px;
+  padding-top: 50px;
 }
 .container .credit {
-margin: 20px 0;
+  margin: 20px 0;
+  font-size: 12px;
 }
 
 code {
-font-size: 80%;
+  font-size: 80%;
 }
 
 /* end footer */
@@ -87,16 +88,20 @@ h2,
 h3{
     margin-top: 15px;
     margin-bottom: 15px;
-    font-weight: 500;
+    font-weight: 200;
 }
 ,
 h4
     {
-        font-weight: 500;
+        font-weight: 200;
         font-style: italic;
+
     }
 /* end h1 group */
-p { line-height: 1.6em; }
+p {
+  line-height: 1.6em;
+  font-size: 16px;
+}
 /* img */
 img
     {
@@ -205,14 +210,14 @@ img
         color: #28a7e9;
         font-size: 30px;
         /*font-weight: bold;*/
-        font-weight:500;
+        font-weight:200;
         height: 70px;
         line-height: 35px;
     }
 .navbar-default .nav li a
     {
         color: #666;
-        font-size: 14px;
+        font-size: 16px;
         /*font-weight: bold;*/
         height: 70px;
         line-height: 40px;
@@ -251,12 +256,13 @@ img
 
 #home p
     {
-        font-weight: 400;
+        font-weight: 200;
         font-style: italic;
         line-height: 2em;
     }
 #home h4
     {
+        font-weight: 200;
         font-style: italic;
     }
 #home img
@@ -297,13 +303,13 @@ img
 /* start projects */
 #projects
     {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 60px;
+        padding-bottom: 30px;
     }
 #projects p
     {
         padding-top: 0px;
-        padding-bottom: 0px;
+        padding-bottom: 30px;
     }
 #projects span
     {
@@ -321,11 +327,9 @@ img
         text-align: center;
         margin-right: 20px;
     }*/
-#projects h3
+#projects h2
     {
-        font-size: 12;
-        /*font-weight: bold;*/
-        /*font-style: italic;*/
+        margin-top: 30px;
     }
 #projects h4
     {
@@ -355,7 +359,7 @@ img
 #projects .hovereffect .overlay {
 /*  width: 240px;
   height: 240px;*/
-  /*border-radius: 20px;*/
+  border-radius: 20px;
   position: absolute;
   overflow: hidden;
   top: 0;
@@ -383,16 +387,19 @@ img
   /*border-radius: 20px;*/
 }
 
-#projects .hovereffect h2 {
+#projects .hovereffect h3 {
   /*text-transform: uppercase;*/
+  margin-top: 0px;
+  margin-left: 25px;
+  margin-right: 25px;
   text-align: center;
   position: relative;
-  height: 120px;
-  font-size: 17px;
-  font-weight: 150px;
+  height: 130px;
+  font-size: 22px;
+  font-weight: 200px;
   padding-top: 15px;
-  padding-bottom: 10px;
-  background: rgba(0, 0, 0, 0.6);
+  padding-bottom: 5px;
+  background: rgba(0, 0, 0, 0.85);
   line-height: 19px;
 }
 
@@ -400,26 +407,27 @@ img
 #projects .hovereffect .fa {
   display: inline-block;
   text-decoration: none;
-  padding: 0px 0px;
-  margin: 10px 0 0 0;
+  /*padding: 0px 0px;*/
+  /*margin: 10px 0 0 0;*/
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.85);
   text-transform: lowercase;
   text-align: center;
   width: 40px;
   height: 40px;
   line-height: 40px;
+  /*bottom: 30px;*/
 }
 
 
 /*#projects .hovereffect a.info:hover {
   box-shadow: 0 0 5px #fff;
 }*/
-#projects .hovereffect p:hover, .hovereffect h2:hover {
+#projects .hovereffect p:hover, .hovereffect h3:hover {
   box-shadow: 0 0 5px #fff;
 }
 
-#projects .hovereffect .fa, .hovereffect h2 {
+#projects .hovereffect .fa, .hovereffect h3 {
   -webkit-transform: scale(0.7);
   -ms-transform: scale(0.7);
   transform: scale(0.7);
@@ -432,7 +440,7 @@ img
   /*background:rgba(0,0,0,0.5);*/
 }
 
-#projects .hovereffect:hover .fa, .hovereffect:hover h2 {
+#projects .hovereffect:hover .fa, .hovereffect:hover h3 {
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-transform: scale(1);
@@ -447,6 +455,10 @@ img
         padding-top: 100px;
         padding-bottom: 30px;
     }
+#why .container
+    {
+      width: 55%;
+    }
 #why img
     {
         border-radius: 160px;
@@ -456,24 +468,19 @@ img
         margin-top: 10px;
         margin-bottom: 20px;
     }
-#why h3
-    {
-        margin-left: 70px;
-        margin-right: 70px;
-    }
 #why h4
     {
-        margin-left: 70px;
-        margin-right: 70px;
+/*        margin-left: 150px;
+        margin-right: 150px;*/
         /*font-weight: bold;*/
         font-style: italic;
-        font-size: 12px;
+        font-size: 14px;
         margin-bottom: 30px;
     }
 #why p
     {
-        margin-right: 70px;
-        margin-left: 70px;
+/*        margin-right: 150px;
+        margin-left: 150px;*/
         text-align: justify;
     }
 #why .fa
@@ -530,20 +537,24 @@ img
 
 #contact
     {
-        padding-top: 100px;
-        padding-bottom: 60px;
-        padding-right: 160px;
-        padding-left: 160px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 100px 0;
+        margin-left: 100px;
+        margin-right: 100px;
     }
-
+#contact .container
+    {
+        width: 65%;
+    }
 #contact h3
     {
-        margin-left: 20px;
-        margin-right: 20px;
+      padding-bottom: 30px;
     }
+
 #contact address
     {
-        padding-top: 20px;
+        padding-top: 30px;
     }
 #contact address .fa
     {
@@ -553,21 +564,28 @@ img
         height: 40px;
         line-height: 40px;
         text-align: center;
-        margin-top: 6px;
-        margin-right: 10px;
+        margin-top: 10px;
+        /*margin-right: 30px;*/
+    }
+#contact label
+    {
+        padding-left: 5px;
     }
 #contact .contact-form
     {
         padding-top: 40px;
-        padding-right: 80px;
-        padding-left: 80px;
+     /*   padding-right: 80px;
+        padding-left: 80px;*/
     }
 #contact .form-control
     {
-        border: none; /*1px rgba(50, 50, 50);*/
+        border: 1px rgba(100, 100, 100);
         border-radius: 10px;
-        box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.09);
+        box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.);
         margin-bottom: 20px;
+/*        width:55%;
+        position: relative;
+        align: center;*/
     }
 #contact input
     {
