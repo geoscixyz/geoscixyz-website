@@ -1,2 +1,2 @@
 # geoscixyz-website
-website for geosci.xyz
+app engine website for [geosci.xyz](http://geosci.xyz)
