@@ -2,7 +2,6 @@ flask
 webtest
 datetime
 webapp2
-os
 jinja2
 urllib
 hashlib
