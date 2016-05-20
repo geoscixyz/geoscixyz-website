@@ -29,7 +29,7 @@ before_install:
   - gcloud auth activate-service-account --key-file client-secret.json
 
 install:
-  - gcloud config set project `geoscixyz`
+  - gcloud config set project geoscixyz
   - gcloud -q components update gae-python
   - pip install -r requirements.txt -t lib/
 
