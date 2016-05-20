@@ -3,6 +3,4 @@ webtest
 datetime
 webapp2
 jinja2
-urllib
-hashlib
 json
