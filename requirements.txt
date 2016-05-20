@@ -1,9 +1,7 @@
 flask
 webtest
-cgi
 datetime
 webapp2
-google
 os
 jinja2
 urllib
