@@ -35,4 +35,4 @@ install:
 
 # Deploy the app
 script:
-- gcloud -q preview app deploy app.yaml --promote
+- gcloud -q preview app deploy ./geoscixyz/app.yaml --promote
