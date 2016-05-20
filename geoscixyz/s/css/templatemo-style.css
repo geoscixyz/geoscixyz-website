@@ -490,47 +490,62 @@ img
     }
 /* end why */
 
-/* start team */
-#team
+/* start who */
+#who
     {
         padding-top: 100px;
+        /*padding-bottom: 30px;*/
+    }
+#story
+    {
+        padding-top: 30px;
         padding-bottom: 30px;
     }
-#team img
+#who img
     {
         border-radius: 160px;
         -webkit-border-radius: 160px;
         -moz-border-radius: 160px;
         display: inline-block;
         margin-top: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
-#team h3
+#who h2 h3 .h2 .h3
     {
-        margin-left: 70px;
-        margin-right: 70px;
+        margin-left: 50px;
+        margin-right: 50px;
+        /*font-size: 20px;*/
     }
-#team h4
+#story h2 h3 .h2 .h3
     {
-        margin-left: 70px;
-        margin-right: 70px;
+        margin-left: 50px;
+        margin-right: 50px;
+        /*font-size: 20px;*/
+    }
+/*#who h3 , #story h3
+  {
+    font-size: 20px;
+  }*/
+#who h4 , #story h4
+    {
+        margin-left: 50px;
+        margin-right: 50px;
         /*font-weight: bold;*/
         font-style: italic;
-        font-size: 12px;
+        /*font-size: 12px;*/
         margin-bottom: 30px;
-    }
-#team p
-    {
-        margin-right: 70px;
-        margin-left: 70px;
         text-align: justify;
     }
-#team .fa
+#story p, #who p
     {
-        color: #28a7e9;
-        font-size: 20px;
+        /*font-size: 1ypx;*/
+        padding-top: 10px;
+        text-align: justify;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 15px;
     }
-/* end team */
+/* end who */
 
 
 /* begin contact */
