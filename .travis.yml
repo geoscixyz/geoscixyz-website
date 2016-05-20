@@ -29,22 +29,22 @@ before_install:
   - gcloud auth activate-service-account --key-file client-secret.json
 
 install:
-  # - gcloud config set project geoscixyz
-  # - gcloud -q components update gae-python
+  - gcloud config set project geoscixyz
+  - gcloud -q components update gae-python
   - pip install -r requirements.txt -t lib/
 
 # Deploy the app
 script:
-- cd ./geoscixyz/
-# - gcloud -q preview app deploy app.yaml --promote
+# - cd ./geoscixyz/
+- gcloud -q preview app deploy --promote
 
 # [START travis_deploy]
-deploy:
-    provider: gae
+# deploy:
+#     provider: gae
     # Skip cleanup so api_key.py and vendored dependencies are still there
-    skip_cleanup: true
-    keyfile: ../client-secret.json
-    project: geosci
+    # skip_cleanup: true
+    # keyfile: ../client-secret.json
+    # project: geosci
     # default: true
     # on: master
 # [END travis_deploy]
