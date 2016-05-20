@@ -36,7 +36,7 @@ install:
 # Deploy the app
 script:
 # - cd ./geoscixyz/
-- gcloud -q preview geoscixyz deploy ./geoscixyz/app.yaml --promote
+- gcloud -q preview app deploy ./geoscixyz/app.yaml --promote
 
 # [START travis_deploy]
 # deploy:
