@@ -31,7 +31,7 @@ before_install:
 install:
   - gcloud config set project `geoscixyz`
   - gcloud -q components update gae-python
-  - pip install -r requirements.txt
+  - pip install -r requirements.txt -t lib/
 
 # Deploy the app
 script:
