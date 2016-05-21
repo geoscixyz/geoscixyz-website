@@ -35,16 +35,4 @@ install:
 
 # Deploy the app
 script:
-# - cd ./geoscixyz/
 - gcloud -q preview app deploy ./geoscixyz/app.yaml --promote
-
-# [START travis_deploy]
-# deploy:
-#     provider: gae
-    # Skip cleanup so api_key.py and vendored dependencies are still there
-    # skip_cleanup: true
-    # keyfile: ../client-secret.json
-    # project: geosci
-    # default: true
-    # on: master
-# [END travis_deploy]
