@@ -35,4 +35,7 @@ install:
 
 # Deploy the app
 script:
-- gcloud -q preview app deploy ./geoscixyz/app.yaml --promote
+  - if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ];
+      gcloud -q preview app deploy ./geoscixyz/app.yaml --promote --version 1;
+    fi
+  - exit 0
