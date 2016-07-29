@@ -15,26 +15,34 @@
 
            <section id="contact">
                 <div class="container">
-                    <div class="row" align="center">
-                        <h3 class="text">{% if mailSent %}Thanks for contacting us!{% else %}get in touch{% endif %}</h3>
+                    <div class="col-md-2 templatemo-box">
                     </div>
-                {% if not mailSent %}
-                <div>
-                    <form role="form" method="POST" action="/contact" accept-charset="UTF-8" enctype="multipart/form-data">
-                        <div class="form-group">
-                            <!-- <label for="exampleInputPassword1">Name</label> -->
-                            <input type="text" class="form-control" id="name" name="name" placeholder="name">
+                    <div class="col-md-8 templatemo-box" align="center">
+                        <div class="row" align="center">
+                            <h3 class="text">{% if mailSent %}Thanks for contacting us!{% else %}get in touch{% endif %}</h3>
                         </div>
-                        <div class="form-group">
-                            <!-- <label for="exampleInputEmail1">Email</label> -->
-                            <input type="email" class="form-control" id="email"  name="email" placeholder="email">
+                    {% if not mailSent %}
+                        <div>
+                            <form role="form" method="POST" action="/contact" accept-charset="UTF-8" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <!-- <label for="exampleInputPassword1">Name</label> -->
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="name">
+                                </div>
+                                <div class="form-group">
+                                    <!-- <label for="exampleInputEmail1">Email</label> -->
+                                    <input type="email" class="form-control" id="email"  name="email" placeholder="email">
+                                </div>
+                                <div class="form-group">
+                                    <!-- <label for="exampleInputEmail1">Message</label> -->
+                                    <textarea class="form-control" id="message" name="message" placeholder="message" style="height:10em; padding-top:10px"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-success">Submit</button>
+                            </form>
                         </div>
-                        <div class="form-group">
-                            <!-- <label for="exampleInputEmail1">Message</label> -->
-                            <textarea class="form-control" id="message" name="message" placeholder="message" style="height:10em; padding-top:10px"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-success pull-right">Submit</button>
-                    </form>
+                    </div>
+                    <div class="col-md-2 templatemo-box">
+                    </div>
+
                 </div>
                 {% endif %}
             </section>

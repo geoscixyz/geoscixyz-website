@@ -558,10 +558,10 @@ img
         margin-left: 100px;
         margin-right: 100px;
     }
-#contact .container
+/*#contact .container
     {
         width: 65%;
-    }
+    }*/
 #contact h3
     {
       padding-bottom: 30px;
@@ -598,9 +598,9 @@ img
         border-radius: 10px;
         box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.);
         margin-bottom: 20px;
-/*        width:55%;
+        width:80%;
         position: relative;
-        align: center;*/
+        align: center;
     }
 #contact input
     {
