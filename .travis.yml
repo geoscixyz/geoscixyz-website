@@ -39,3 +39,6 @@ script:
       gcloud -q preview app deploy ./geoscixyz/app.yaml --version 1 --promote;
     fi
   - exit 0
+
+notifications:
+  slack: ubcgif:1Z2lR3XYRSM3GHflG71ZHEN6
