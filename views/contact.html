@@ -1,0 +1,56 @@
+<html lang="en">
+    
+    <head>
+        <title>Geosci</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Open-source resources to facilitate education, research and collaboration in the geoscience community">
+        <link rel="stylesheet" href="/assets/css/bootstrap.css">
+        <link rel="stylesheet" href="/assets/css/ionicons.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+
+    <body>
+        {% include _templateFolder+'nav.html' %}
+
+        {% if mailSent %}
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <p class="lead" style="text-align:center;margin-bottom:250px;">Your mail has been sent. Thank you!</p>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+
+        {% if not mailSent %}
+        <div class="container">
+            <div class="row">
+                <form role="form" method="POST" action="/contact" accept-charset="UTF-8" enctype="multipart/form-data">
+                    <div class="container">
+                        <div class="form-group row">
+                            <label class="col-lg-10 col-lg-offset-2" for="name">Name</label>
+                            <input class="form-control-custom col-lg-8 col-lg-offset-2" type="text" id="name" name="name">
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-10 col-lg-offset-2" for="email">Email</label>
+                            <input class="form-control-custom col-lg-8 col-lg-offset-2" type="email" id="email"  name="email">
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-lg-10 col-lg-offset-2" for="message">Message</label>
+                            <textarea class="form-control-custom col-lg-8 col-lg-offset-2" id="message" name="message" style="height:10em;vertical-align:top;"></textarea>
+                        </div>
+                        <div class="form-group row">
+                            <button class="col-lg-2 col-lg-offset-5" type="submit" class="btn btn-success pull-right">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        {% endif %}
+
+        <div id="push"></div>
+
+        {% include _templateFolder+'footer.html' %}
+    </body>
