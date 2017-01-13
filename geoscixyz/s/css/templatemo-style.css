@@ -547,6 +547,44 @@ img
     }
 /* end who */
 
+/* begin presentations */
+#presentations
+    {
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+
+#presentations .fa
+    {
+        background: #28a7e9;
+        border-radius: 50%;
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        line-height: 30px;
+        text-align: center;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+
+#presentations h3
+  {
+    padding-bottom: 10px;
+  }
+
+/*#published .fa
+    {
+        background: #28a7e9;
+        border-radius: 50%;
+        color: #fff;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin-right: 20px;
+    }*/
 
 /* begin contact */
 
