@@ -36,7 +36,10 @@ install:
 # Deploy the app
 script:
   - if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then
-      gcloud -q app deploy ./geoscixyz/app.yaml --version 1 --promote;
+      if [ ! -d ${HOME}/google-cloud-sdk ]; then
+         curl https://sdk.cloud.google.com | bash;
+      fi ;
+      gcloud -q app deploy ./geoscixyz/app.yaml --version ${TRAVIS_COMMIT} --promote ;
     fi
   - exit 0
 
